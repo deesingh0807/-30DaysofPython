@@ -1,0 +1,15 @@
+import random
+inp = random.randint(0,10)
+guess = int(input("Guess the number:  "))
+tries = 0
+
+while inp != guess and tries < 4:
+  guess = int(input("Guess the number:  "))
+  tries = tries + 1
+print(" ")
+if inp != guess and tries ==4:
+  print("You lost!")
+else:
+  print("You won!")
+
+print("The answer is", inp)
