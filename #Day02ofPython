@@ -1,0 +1,40 @@
+import math
+
+print("===============")
+print("Area Calculator")
+print("===============")
+print(" ")
+print("1) Triangle")
+print("2) Rectangle")
+print("3) Square")
+print("4) Circle")
+print("5) Quit")
+print(" ")
+x=int(input("Which shape: "))
+print(" ")
+if x==1:
+  a=int(input("Base: "))
+  b=int(input("Height: "))
+  print(" ")
+  area=int((a*b)/2)
+  print(f"The area is {area}.")
+elif x==2:
+  a=int(input("Length: "))
+  b=int(input("Breadth: "))
+  print(" ")
+  area=int(a*b)
+  print(f"The area is {area}.")
+elif x==3:
+  a=int(input("Side: "))
+  print(" ")
+  area=int(a*a)
+  print(f"The area is {area}.")
+elif x==4:
+  a=int(input("Radius: "))
+  print(" ")
+  area=math.pi*a*a
+  print(f"The area is {area}.")
+elif x==5:
+  print("Thank you for giving us your time!")
+else:
+  print("Invalid input!")
