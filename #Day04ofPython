@@ -1,0 +1,49 @@
+import random
+li=['✊','🖐️','✌️']
+c=random.choice(li)
+d=0
+if c=="✊":
+    d=1
+elif c=="🖐️":
+    d=2
+elif c=="✌️":
+    d=3
+
+print("===================")
+print("Rock Paper Scissors")
+print("===================")
+print(" ")
+print("1) ✊")
+print("2) 🖐️")
+print("3) ✌️")
+p=int(input("Pick a number: "))
+q=None
+if p==1:
+    q="✊"
+elif p==2:
+    q="🖐️"
+elif p==3:
+    q="✌️"
+else:
+    print("Invalid input!")
+print(" ")
+print(f"You chose: {q}")
+print(f"CPU chose: {c}")
+if p==c:
+    print("It's a tie.")
+else:
+    if p==1:
+        if d==2:
+            print("You lost!")
+        elif d==3:
+            print("You won!")
+    elif p==2:
+        if d==3:
+            print("You lost!")
+        elif d==1:
+            print("You won!")
+    elif p==3:
+        if d==1:
+            print("You lost!")
+        elif d==2:
+            print("You won!")
